@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"  class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Fashion World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--contact us-->
+      <div class="container9">
+        <h1>Contact Us</h1>
+        </div>
+        <div class="container10">
+        <p>There are many ways to contact us. <br>You may drop us a line, give us a call or send an email, choose what suits you the most.<br>
+
+            (800) 686-6688<br>
+            
+            fashionworld@gmail.com<br>
+            
+            mm
+            
+            Open hours: 8.00-18.00 Mon-Fri<br>
+            
+            Sunday: Closed</p><br>
+      </div>
+      <div class="container8">
+      <div class="form-floating mb-3">
+        <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Your Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Enter yout Email</label>
+      </div>
+      <br>
+        <textarea placeholder="Type your Feedback" cols="169"> Feedback
+        </textarea>
+      
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Submit</button>
+      </div>
+    </div>
+
+      <!--Footer-->
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Subscribed Succesfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>© 2021 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      </body>
+      </html>
